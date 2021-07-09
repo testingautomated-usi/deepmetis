@@ -9,7 +9,7 @@ The package is structured as follows:
 * [__DeepMetis-MNIST__](./DeepMetis-MNIST) contains the DeepMetis tool adapted to the handwritten digit classification case study and the instructions on how to use it;
 * [__DeepMetis-UE__](./DeepMetis-UE) contains the DeepMetis tool adapted to the eye gaze prediction case study and the instructions on how to use it;
 * [__experiments__](./experiments) contains the raw experimental data and the scripts to obtain the results reported in the paper;
-* [__installation_guide__](./INSTALL.md) contains a quick installation guide of the tool.
+* [__installation guide__](./INSTALL.md) contains a quick installation guide of the tool.
 * [__preprint__](./deepmetis_paper.pdf) is the preprint version of our paper describing DeepMetis.
 
 _Note:_ each sub-package contains further specific instructions.
