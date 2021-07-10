@@ -22,14 +22,14 @@ docker run -it --rm p1ndsvin/metisbox
 ```
 
 ## Step 2: Run DeepMetis ##
-Use the following commands to start a fast run of DeepMetis-MNIST:
+Use the following commands to start a run of DeepMetis-MNIST:
 
 ```
 cd DeepHyperion/DeepMetis-MNIST
 python main.py
 ```
 
-> NOTE: `properties.py` contains the tool configuration. You should edit this file to change the configuration. For example, if you want to run <i>DeepMetis-MNIST</i> with the same configuration as in the paper, you need to set the `NGEN` variable in `properties.py` to `1000`
+> NOTE: `properties.py` contains the tool's configuration, i.e., you should edit this file to change its configuration. For example, if you want to run <i>DeepMetis-MNIST</i> for a shorter number of iteration than the experiments in the paper, you need to set the `NGEN` variable in `properties.py` to a value lower than `1000`
 
 When the run ends, on the console you should see a message like the following:
 
@@ -46,3 +46,7 @@ Moreover, DeepMetis will create a folder `results` which contains:
 * the archive of solutions (`archive` folder); 
 * the final report (`report_final.json`);
 * the configuration's description (`config.json`).
+
+## Step 3: Evaluate the Mutation Score with DeepCrime ##
+
+
