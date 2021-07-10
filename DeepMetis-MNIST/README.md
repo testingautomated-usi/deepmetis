@@ -26,7 +26,7 @@ Use the following commands to start a run of DeepMetis-MNIST:
 
 ```
 cd DeepMetis-MNIST
-python main.py
+python3 main.py
 ```
 
 > NOTE: `properties.py` contains the tool's configuration, i.e., you should edit this file to change its configuration. For example, if you want to run <i>DeepMetis-MNIST</i> for a shorter number of iteration than the experiments in the paper, you need to set the `NGEN` variable in `properties.py` to a value lower than `1000`
