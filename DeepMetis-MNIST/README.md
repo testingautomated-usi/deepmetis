@@ -25,7 +25,7 @@ docker run -it --rm p1ndsvin/ubuntu:metisbox
 Use the following commands to start a run of DeepMetis-MNIST:
 
 ```
-cd DeepHyperion/DeepMetis-MNIST
+cd DeepMetis-MNIST
 python main.py
 ```
 
