@@ -12,13 +12,13 @@ Follow the steps below to set up DeepMetis and validate its general functionalit
 Pull our pre-configured Docker image for DeepMetis-MNIST:
 
 ``` 
-docker pull p1ndsvin/metisbox
+docker pull p1ndsvin/ubuntu:metisbox
 ```
 
 Run it by typing in the terminal the following commands:
 
 ```
-docker run -it --rm p1ndsvin/metisbox
+docker run -it --rm p1ndsvin/ubuntu:metisbox
 ```
 
 ## Step 2: Run DeepMetis ##
