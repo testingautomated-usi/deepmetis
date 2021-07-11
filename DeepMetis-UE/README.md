@@ -24,11 +24,11 @@ The folder Sikuli-jars contains a version of SikuliX downloaded from the [offici
 
 ![eye](../images/eye.PNG)
 
-![start](../images/start.PNG)
-
 ![first](../images/first.PNG)
 
 ![second](../images/second.PNG)
+
+![start](../images/start.PNG)
 
 ![X](../images/X.PNG)
 
