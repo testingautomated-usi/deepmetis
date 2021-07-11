@@ -20,28 +20,28 @@ with open(dst) as f:
 
 #exit()
 # Starting Unity eyes
-doubleClick("1600262945133.png")
+doubleClick("eye.png")
 wait(3)
 
 # Proceed
-click("1589285287698.png")
+click("play.png")
 wait(6)
 
 # Input camera angles
 cam_input = str(c_pitch)+","+str(c_yaw)+",0,0"
-click("1600267084050.png")
+click("first.png")
 type(cam_input)
 
 # Input eye agnles
 eye_input = str(e_pitch)+","+str(e_yaw)+",0,0"
-click("1600267045790.png")
+click("second.png")
 type(eye_input)
 
 
 # Start generating images
-click("1600266941410.png")
+click("start.png")
 wait(5)
 
 # Stop generating images
-click("1600267101911.png")
+click("x.png")
 #wait(0.5)
