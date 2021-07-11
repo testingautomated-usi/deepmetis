@@ -8,15 +8,18 @@ This tool is developed in Python on top of the DEAP evolutionary computation fra
 
 This tool needs the UnityEyes and Sikuli to be installed on the machine where it is running. 
 
+### Java Installation ###
+
 ### Python Installation ###
 
 ### UnityEyes Installation and Configuration ###
 
-A free version of UnityEyes can be found at https://www.cl.cam.ac.uk/research/rainbow/projects/unityeyes/.
+Download a free version of UnityEyes from the [official website](https://www.cl.cam.ac.uk/research/rainbow/projects/unityeyes/data/UnityEyes_Windows.zip).  
+Edit the UNITYEYES_PATH in [properties.py](properties.py) by inserting the path to your UnityEyes folder. 
 
-### Sikuli Installation and Configuration ###
+### SikuliX Installation and Configuration ###
 
-A free version of Sikuli can be found at ...
+The folder Sikuli-jars contains a version of SikuliX downloaded from the [official website](http://sikulix.com).
 
 #### Other Dependencies ###
 
@@ -26,7 +29,7 @@ To easily install the dependencies with pip, we suggest to create a dedicated vi
 
 ## Step 2: Run DeepMetis
 
-Use the following commands to start a fast run of DeepMetis-UE:
+Use the following commands to start a run of DeepMetis-UE:
 
 ```
 python test.py
