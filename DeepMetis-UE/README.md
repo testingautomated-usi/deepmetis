@@ -78,6 +78,8 @@ The folder Sikuli-jars contains a version of SikuliX downloaded from the [offici
 
 * Finally, save all the captured images in the [sikulix_scripts/unityeyes.sikuli folder](sikulix_scripts/unityeyes.sikuli/)
 
+> **NOTE**: We already provided examples of these images in the [sikulix_scripts/unityeyes.sikuli folder](sikulix_scripts/unityeyes.sikuli/) but you must replace them to match your own screen resolution.
+
 ## Step 2: Run DeepMetis
 
 Use the following commands to start a run of DeepMetis-UE:
