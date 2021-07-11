@@ -8,21 +8,23 @@ This tool is developed in Python on top of the DEAP evolutionary computation fra
 
 This tool needs the UnityEyes and Sikuli to be installed on the machine where it is running. 
 
-### Java Installation ###
+### Step 1.1: Java Installation ###
 
-### Python Installation ###
+### Step 1.2: Python Installation ###
 
-### UnityEyes Installation and Configuration ###
+### Step 1.3: UnityEyes Installation and Configuration ###
 
-Download a free version of UnityEyes from the [official website](https://www.cl.cam.ac.uk/research/rainbow/projects/unityeyes/data/UnityEyes_Windows.zip).  
-Edit the UNITYEYES_PATH in [properties.py](properties.py) by inserting the path to your UnityEyes folder. 
-Finally, pin the UnityEyes application to the taskbar: [instructions here](https://support.microsoft.com/en-us/windows/pin-apps-and-folders-to-the-desktop-or-taskbar-f3c749fb-e298-4cf1-adda-7fd635df6bb0)
+* Download a free version of UnityEyes from the [official website](https://www.cl.cam.ac.uk/research/rainbow/projects/unityeyes/data/UnityEyes_Windows.zip).  
+* Edit the UNITYEYES_PATH in [properties.py](properties.py) by inserting the path to your UnityEyes folder. 
+* Pin the UnityEyes application to the taskbar: [instructions here](https://support.microsoft.com/en-us/windows/pin-apps-and-folders-to-the-desktop-or-taskbar-f3c749fb-e298-4cf1-adda-7fd635df6bb0)
 
-### SikuliX Installation and Configuration ###
+### Step 1.4: SikuliX Installation and Configuration ###
 
-The folder Sikuli-jars contains a version of SikuliX downloaded from the [official website](http://sikulix.com).
+The folder Sikuli-jars contains a version of SikuliX downloaded from the [official website](http://sikulix.com). We use it to allow the interaction of DeepMetis with UnityEyes via GUI. Therefore, for each system the user should provide a screenshot of the GUI widgets to interact with.  
 
-#### Other Dependencies ###
+![first](./images/X.jpg)
+
+### Step 1.5: Other Dependencies ###
 
 To easily install the dependencies with pip, we suggest to create a dedicated virtual environment and run the command:
 
