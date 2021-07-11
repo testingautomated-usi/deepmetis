@@ -26,19 +26,23 @@ The folder Sikuli-jars contains a version of SikuliX downloaded from the [offici
 
 ![eye](../images/eye.PNG)
 
-* Start UnityEyes and from the starting window take a screenshot of the highlighted component (i.e., first edit text widget) and save it as first.png
+* Start UnityEyes and from the starting window take a screenshot of the highlighted component (i.e., play button) and save it as play.png
 
 ![first](../images/first.PNG)
 
-* From the UnityEyes' starting window take a screenshot of the highlighted component (i.e., second edit text widget) and save it as second.png
+* Press the play button and from the main window take a screenshot of the highlighted component (i.e., first edit text widget) and save it as first.png
+
+![first](../images/first.PNG)
+
+* From the UnityEyes' main window take a screenshot of the highlighted component (i.e., second edit text widget) and save it as second.png
 
 ![second](../images/second.PNG)
 
-* From the UnityEyes' starting window take a screenshot of the highlighted component (i.e., start button) and save it as start.png
+* From the UnityEyes' main window take a screenshot of the highlighted component (i.e., start button) and save it as start.png
 
 ![start](../images/start.PNG)
 
-* From the UnityEyes' starting window take a screenshot of the highlighted component (i.e., close window button) and save it as x.png
+* From the UnityEyes' main window take a screenshot of the highlighted component (i.e., close window button) and save it as x.png
 
 ![X](../images/X.PNG)
 
