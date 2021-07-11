@@ -20,7 +20,7 @@ This tool needs the UnityEyes and Sikuli to be installed on the machine where it
 
 ### Step 1.4: SikuliX Installation and Configuration ###
 
-The folder Sikuli-jars contains a version of SikuliX downloaded from the [official website](http://sikulix.com). We use it to allow the interaction of DeepMetis with UnityEyes via GUI. Therefore, for each system the user should provide a screenshot of the GUI widgets to interact with.  
+The folder Sikuli-jars contains a version of SikuliX downloaded from the [official website](http://sikulix.com). We use it to allow the interaction of DeepMetis with UnityEyes via GUI. Therefore, for each system the user should provide a screenshot of the GUI widgets to interact with. In the following, we will provide instructions on how to capture these images. To this aim, we provide the whole window along with the specific widget to crop, i.e. the one highlighted with a pink frame.
 
 * In the taskbar, take a screenshot of the highlighted component (i.e., UnityEyes icon) and save it as eye.png
 
