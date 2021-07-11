@@ -22,7 +22,15 @@ This tool needs the UnityEyes and Sikuli to be installed on the machine where it
 
 The folder Sikuli-jars contains a version of SikuliX downloaded from the [official website](http://sikulix.com). We use it to allow the interaction of DeepMetis with UnityEyes via GUI. Therefore, for each system the user should provide a screenshot of the GUI widgets to interact with.  
 
+![eye](../images/X.PNG)
+
+![start](../images/X.PNG)
+
 ![first](../images/X.PNG)
+
+![second](../images/X.PNG)
+
+![X](../images/X.PNG)
 
 ### Step 1.5: Other Dependencies ###
 
