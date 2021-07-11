@@ -12,6 +12,36 @@ This tool needs the UnityEyes and Sikuli to be installed on the machine where it
 
 ### Step 1.2: Python Installation ###
 
+Install [_Python 3.7.9_](https://www.python.org/ftp/python/3.7.9/python-3.7.9-amd64.exe)
+
+To easily install the dependencies with pip, we suggest to create a dedicated virtual environment. For example, you can use `venv` and create a virtual environment called `.venv` inside the current folder (`DeepHyperion-BNG`):
+
+```
+python -m venv .venv
+```
+
+At this point, you need to activate the virtual environment, and check that you are using the correct version of python.
+
+``` 
+.\.venv\Scripts\activate
+
+py.exe -V
+```
+This command should produce as output the following string: `Python 3.7.9`
+
+> **NOTE**: The command is `py.exe` not `python.exe`
+
+At this point, upgrade `pip`, and install the required packages:
+
+```
+py.exe -m pip install --upgrade pip
+
+pip install setuptools wheel --upgrade
+
+pip install -r requirements.txt
+```
+
+
 ### Step 1.3: UnityEyes Installation and Configuration ###
 
 * Download a free version of UnityEyes from the [official website](https://www.cl.cam.ac.uk/research/rainbow/projects/unityeyes/data/UnityEyes_Windows.zip).  
@@ -47,12 +77,6 @@ The folder Sikuli-jars contains a version of SikuliX downloaded from the [offici
 ![X](../images/X.PNG)
 
 * Finally, save all the captured images in the [sikulix_scripts/unityeyes.sikuli folder](sikulix_scripts/unityeyes.sikuli/)
-
-### Step 1.5: Other Dependencies ###
-
-To easily install the dependencies with pip, we suggest to create a dedicated virtual environment and run the command:
-
-```pip install -r requirements.txt```
 
 ## Step 2: Run DeepMetis
 
