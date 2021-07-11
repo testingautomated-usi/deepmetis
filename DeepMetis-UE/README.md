@@ -28,7 +28,7 @@ The folder Sikuli-jars contains a version of SikuliX downloaded from the [offici
 
 * Start UnityEyes and from the starting window take a screenshot of the highlighted component (i.e., play button) and save it as play.png
 
-![first](../images/first.PNG)
+![play](../images/play.PNG)
 
 * Press the play button and from the main window take a screenshot of the highlighted component (i.e., first edit text widget) and save it as first.png
 
