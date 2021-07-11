@@ -42,6 +42,8 @@ The folder Sikuli-jars contains a version of SikuliX downloaded from the [offici
 
 ![X](../images/X.PNG)
 
+* Finally, save all the captured images in the [sikulix_scripts/unityeyes.sikuli folder](sikulix_scripts/unityeyes.sikuli/)
+
 ### Step 1.5: Other Dependencies ###
 
 To easily install the dependencies with pip, we suggest to create a dedicated virtual environment and run the command:
