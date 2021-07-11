@@ -22,13 +22,23 @@ This tool needs the UnityEyes and Sikuli to be installed on the machine where it
 
 The folder Sikuli-jars contains a version of SikuliX downloaded from the [official website](http://sikulix.com). We use it to allow the interaction of DeepMetis with UnityEyes via GUI. Therefore, for each system the user should provide a screenshot of the GUI widgets to interact with.  
 
+* In the taskbar, take a screenshot of the highlighted component (i.e., UnityEyes icon) and save it as eye.png
+
 ![eye](../images/eye.PNG)
+
+* Start UnityEyes and from the starting window take a screenshot of the highlighted component (i.e., first edit text widget) and save it as first.png
 
 ![first](../images/first.PNG)
 
+* From the UnityEyes' starting window take a screenshot of the highlighted component (i.e., second edit text widget) and save it as second.png
+
 ![second](../images/second.PNG)
 
+* From the UnityEyes' starting window take a screenshot of the highlighted component (i.e., start button) and save it as start.png
+
 ![start](../images/start.PNG)
+
+* From the UnityEyes' starting window take a screenshot of the highlighted component (i.e., close window button) and save it as x.png
 
 ![X](../images/X.PNG)
 
