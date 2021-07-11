@@ -36,7 +36,7 @@ At this point, upgrade `pip`, and install the required packages:
 ```
 py.exe -m pip install --upgrade pip
 
-pip install setuptools wheel --upgrade
+pip install setuptools --upgrade
 
 pip install -r requirements.txt
 ```
