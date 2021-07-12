@@ -16,30 +16,40 @@ Download and install [Java SE 11](https://www.oracle.com/it/java/technologies/ja
 
 Install [_Python 3.7.9_](https://www.python.org/ftp/python/3.7.9/python-3.7.9-amd64.exe)
 
+Check that you are using the correct version of python:
+``` 
+py.exe -V
+```
+This command should produce as output the following string: `Python 3.7.9`
+
 To easily install the dependencies with pip, we suggest to create a dedicated virtual environment. For example, you can use `venv` and create a virtual environment called `.venv` inside the current folder (`DeepMetis-UE`):
 
 ```
 python -m venv .venv
 ```
 
-At this point, you need to activate the virtual environment, and check that you are using the correct version of python.
+At this point, you need to activate the virtual environment:
 
 ``` 
 .\.venv\Scripts\activate
-
-py.exe -V
 ```
-This command should produce as output the following string: `Python 3.7.9`
 
-> **NOTE**: The command is `py.exe` not `python.exe`
 
-At this point, upgrade `pip`, and install the required packages:
+At this point, upgrade `pip`:
 
 ```
 py.exe -m pip install --upgrade pip
 
+```
+
+Update setuptools:
+```
 pip install setuptools --upgrade
 
+```
+
+Finally, install the other dependencies:
+```
 pip install -r requirements.txt
 ```
 
