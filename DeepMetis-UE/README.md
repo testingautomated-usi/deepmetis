@@ -94,10 +94,15 @@ The folder Sikuli-jars contains a version of SikuliX downloaded from the [offici
 
 ## Step 2: Run DeepMetis
 
-Use the following commands to start a run of DeepMetis-UE:
+Use the following command to start the Sikulix server:
 
 ```
 python test.py
+```
+
+Use the following command to start a run of DeepMetis-UE:
+
+```
 python main.py
 ```
 
