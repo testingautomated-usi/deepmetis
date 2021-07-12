@@ -125,3 +125,8 @@ Moreover, DeepMetis will create a folder `results` which contains:
 * the configuration's description (`config.json`).
 
 ## Step 3: Evaluate the Mutation Score with DeepCrime ##
+
+## Troubleshooting ##
+
+### ImportError: Could not find the DLL(s) msvcp140.dll ### 
+This issue can be resolved by dowloading and installing [vc_redist.exe](https://support.microsoft.com/en-us/topic/the-latest-supported-visual-c-downloads-2647da03-1eea-4433-9aff-95f26a218cc0)
