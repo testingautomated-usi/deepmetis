@@ -1,12 +1,15 @@
 # Getting the angles from the file
 from os.path import join
+
+BASE = "C:"
+
 SIKULIX_SCRIPT_FOLDER = "sikulix_scripts"
 
 SIKULIX_SCRIPT_NAME_W_FMT = "unityeyes.sikuli"
 
 SIKULIX_ANGLES_FILE_NAME = "angles.txt"
 
-dst = join(SIKULIX_SCRIPT_FOLDER, SIKULIX_SCRIPT_NAME_W_FMT, SIKULIX_ANGLES_FILE_NAME)
+dst = join(BASE, SIKULIX_SCRIPT_FOLDER, SIKULIX_SCRIPT_NAME_W_FMT, SIKULIX_ANGLES_FILE_NAME)
 with open(dst) as f:
     content = [i.strip() for i in f.readlines()]
     cam_angles = content[0]

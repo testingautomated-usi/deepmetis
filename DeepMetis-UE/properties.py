@@ -1,3 +1,5 @@
+import os
+
 # GA Setup
 POPSIZE = 12
 NGEN = 100
@@ -38,17 +40,17 @@ RESULTS_PATH = 'results'
 DATASET = 'population_9'
 
 
-SIKULIX_API_PATH = "Sikuli-jars//sikulixapi-2.0.4.jar"
+SIKULIX_API_PATH = "Sikuli-jars//sikulixapi-2.0.5.jar"
 
 SIKULIX_REST = "http://localhost:50001/"
 
 
-SIKULIX_SCRIPT_FOLDER = "sikulix_scripts"
+SIKULIX_SCRIPT_FOLDER = os.path.join("C:","sikulix_scripts")
 
-import os
-BASEPATH = os.getcwd().replace("\\", "//")
+# BASEPATH = os.getcwd().replace("\\", "//")
 
-SIKULIX_SCRIPTS_HOME = BASEPATH + "//sikulix_scripts"
+#SIKULIX_SCRIPTS_HOME = BASEPATH + "//sikulix_scripts"
+SIKULIX_SCRIPTS_HOME = "sikulix_scripts"
 
 SIKULIX_SCRIPT_NAME = "unityeyes"
 
