@@ -56,13 +56,13 @@ pip install -r requirements.txt
 
 ### Step 1.3: UnityEyes Installation and Configuration ###
 
-* Download a free version of UnityEyes from the [official website](https://www.cl.cam.ac.uk/research/rainbow/projects/unityeyes/data/UnityEyes_Windows.zip).  
+* Download a free Windows version of UnityEyes from the [official website](https://www.cl.cam.ac.uk/research/rainbow/projects/unityeyes/data/UnityEyes_Windows.zip).  
 * Edit the UNITYEYES_PATH in [properties.py](properties.py) by inserting the path to your UnityEyes folder. 
 * Pin the UnityEyes application to the taskbar: [instructions here](https://support.microsoft.com/en-us/windows/pin-apps-and-folders-to-the-desktop-or-taskbar-f3c749fb-e298-4cf1-adda-7fd635df6bb0)
 
 ### Step 1.4: SikuliX Installation and Configuration ###
 
-The folder Sikuli-jars contains a version of SikuliX downloaded from the [official website](http://sikulix.com). We use it to allow the interaction of DeepMetis with UnityEyes via GUI. Therefore, for each system the user should provide a screenshot of the GUI widgets to interact with. In the following, we will provide instructions on how to capture these images. To this aim, we provide the whole window along with the specific widget to crop, i.e. the one highlighted with a pink frame.
+The folder Sikuli-jars contains a version of SikuliX downloaded from the [official website](http://sikulix.com). We use it to allow the interaction of DeepMetis with UnityEyes via GUI. SikuliX works based on scanning the screen for particular elements to interact with, for example, an app icon to click on. Therefore, for each system the user should provide screenshots of GUI widgets to interact with. As screen resolutions and colours might differ from one computer to another, the screenshots we provide with our SikuliX scripts might not work on other computers. In the following, we will provide instructions on how to re-capture these images. To this aim, we provide the whole window along with the specific widget to crop, i.e. the one highlighted with a pink frame.
 
 * In the taskbar, take a screenshot of the highlighted component (i.e., UnityEyes icon) and save it as eye.png
 
@@ -90,13 +90,14 @@ The folder Sikuli-jars contains a version of SikuliX downloaded from the [offici
 
 * Save all the captured images in the [sikulix_scripts/unityeyes.sikuli folder](sikulix_scripts/unityeyes.sikuli/)
 
-> **NOTE**: We already provided examples of these images in the [sikulix_scripts/unityeyes.sikuli folder](sikulix_scripts/unityeyes.sikuli/) but you must replace them to match your own screen resolution.
+> **NOTE**: Please note that the computer should have a monitor connected for SikuliX to work.
+> **NOTE**: We already provided examples of these images in the [sikulix_scripts/unityeyes.sikuli folder](sikulix_scripts/unityeyes.sikuli/) but you probably must replace them to match your own screen resolution.
 
 * Run the Sikulix IDE in [Sikulix_jars/sikulixide-2.0.4.jar](Sikulix_jars/) (you can simply double click on it). It will automatically install the Jython standalone version.
 * Open [sikulix_scripts/unityeyes.sikuli/unityeyes.py](sikulix_scripts/unityeyes.sikuli/unityeyes.py) inside the Sikulix IDE.
 * Press the Run button to verify that the Sikulix script is able to find and interact with all the GUI widgets
 
-> **NOTE**: If Sikulix cannot find any widget, please capture it again (a larger capture with some surrounding context may help).
+> **NOTE**: If Sikulix cannot find any widget, please capture it again (try to focus on the element and capture pixels that will always be present around the element).
 
 ## Step 2: Run DeepMetis
 
