@@ -93,6 +93,7 @@ The folder Sikuli-jars contains a version of SikuliX downloaded from the [offici
 * Place the [updated sikulix_scripts folder](sikulix_scripts) folder directly to the "C:/" drive
 
 > **NOTE**: Please note that a computer should have a monitor connected for SikuliX to work.
+
 > **NOTE**: We already provided examples of these images in the [sikulix_scripts/unityeyes.sikuli folder](sikulix_scripts/unityeyes.sikuli/) but you most probably have to replace them to match your own screen resolution.
 
 * Run the Sikulix IDE in [Sikulix_jars/sikulixide-2.0.4.jar](Sikulix_jars/) (you can simply double click on it). It will automatically install the Jython standalone version.
