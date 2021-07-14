@@ -45,7 +45,7 @@ SIKULIX_API_PATH = "Sikuli-jars//sikulixapi-2.0.5.jar"
 SIKULIX_REST = "http://localhost:50001/"
 
 
-SIKULIX_SCRIPT_FOLDER = os.path.join("C:","sikulix_scripts")
+SIKULIX_SCRIPT_FOLDER = os.path.join("C://","sikulix_scripts")
 
 # BASEPATH = os.getcwd().replace("\\", "//")
 
