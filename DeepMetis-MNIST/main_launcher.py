@@ -9,7 +9,7 @@ src = RESULTS_PATH
 
 for i in range(10):
 
-   subprocess.call([INTERPRETER, "metis_pop_generator3.py"])
+   subprocess.call([INTERPRETER, "metis_pop_generator.py"])
    subprocess.call([INTERPRETER, "main.py"])
 
    dst = src+str()
