@@ -1,0 +1,11 @@
+Run Num,Input Num,WLX Killed,WLX p-value,Effect Size
+/Users/usi/Documents/precrime_mutation/deepmetis_replication/MNIST/dlfuzz/only_valid_inputs/add_weights_regularisation/9,48,True,0.0,3.751366322690992
+/Users/usi/Documents/precrime_mutation/deepmetis_replication/MNIST/dlfuzz/only_valid_inputs/add_weights_regularisation/7,49,True,0.0,3.111072502667434
+/Users/usi/Documents/precrime_mutation/deepmetis_replication/MNIST/dlfuzz/only_valid_inputs/add_weights_regularisation/6,60,True,0.0,3.5248585310351355
+/Users/usi/Documents/precrime_mutation/deepmetis_replication/MNIST/dlfuzz/only_valid_inputs/add_weights_regularisation/1,61,True,0.0,2.9707249215327485
+/Users/usi/Documents/precrime_mutation/deepmetis_replication/MNIST/dlfuzz/only_valid_inputs/add_weights_regularisation/10,53,True,0.0,2.371140209799429
+/Users/usi/Documents/precrime_mutation/deepmetis_replication/MNIST/dlfuzz/only_valid_inputs/add_weights_regularisation/8,48,True,0.0,2.7524947406828124
+/Users/usi/Documents/precrime_mutation/deepmetis_replication/MNIST/dlfuzz/only_valid_inputs/add_weights_regularisation/4,51,True,0.0,2.263006401872301
+/Users/usi/Documents/precrime_mutation/deepmetis_replication/MNIST/dlfuzz/only_valid_inputs/add_weights_regularisation/3,47,True,0.0,3.006114482224258
+/Users/usi/Documents/precrime_mutation/deepmetis_replication/MNIST/dlfuzz/only_valid_inputs/add_weights_regularisation/2,54,True,0.0,3.5693488332909418
+/Users/usi/Documents/precrime_mutation/deepmetis_replication/MNIST/dlfuzz/only_valid_inputs/add_weights_regularisation/5,53,True,0.0,2.4747806031972432

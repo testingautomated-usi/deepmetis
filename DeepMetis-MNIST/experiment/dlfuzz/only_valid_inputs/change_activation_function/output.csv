@@ -1,0 +1,11 @@
+Run Num,Input Num,WLX Killed,WLX p-value,Effect Size
+/Users/usi/Documents/precrime_mutation/deepmetis_replication/MNIST/dlfuzz/only_valid_inputs/change_activation_function/9,133,True,0.0,3.1797617547627306
+/Users/usi/Documents/precrime_mutation/deepmetis_replication/MNIST/dlfuzz/only_valid_inputs/change_activation_function/7,137,True,0.0,3.5169463803056122
+/Users/usi/Documents/precrime_mutation/deepmetis_replication/MNIST/dlfuzz/only_valid_inputs/change_activation_function/6,125,True,0.0,1.8561616110021528
+/Users/usi/Documents/precrime_mutation/deepmetis_replication/MNIST/dlfuzz/only_valid_inputs/change_activation_function/1,146,True,0.0,2.6130068608173254
+/Users/usi/Documents/precrime_mutation/deepmetis_replication/MNIST/dlfuzz/only_valid_inputs/change_activation_function/10,126,True,0.0,4.958960796550593
+/Users/usi/Documents/precrime_mutation/deepmetis_replication/MNIST/dlfuzz/only_valid_inputs/change_activation_function/8,129,True,0.0,2.9148790301025165
+/Users/usi/Documents/precrime_mutation/deepmetis_replication/MNIST/dlfuzz/only_valid_inputs/change_activation_function/4,136,True,0.0,4.1730221698264005
+/Users/usi/Documents/precrime_mutation/deepmetis_replication/MNIST/dlfuzz/only_valid_inputs/change_activation_function/3,136,True,0.0,2.113463660435386
+/Users/usi/Documents/precrime_mutation/deepmetis_replication/MNIST/dlfuzz/only_valid_inputs/change_activation_function/2,141,True,0.0,2.3026823471529676
+/Users/usi/Documents/precrime_mutation/deepmetis_replication/MNIST/dlfuzz/only_valid_inputs/change_activation_function/5,147,True,0.0,3.5844043948318576
