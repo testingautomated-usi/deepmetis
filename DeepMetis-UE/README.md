@@ -144,3 +144,51 @@ If you have python installed by some other way, for example from executable inst
 ```
 py main.py
 ```
+
+### Evaluate the augmented test set with DeepCrime
+
+Once DeepMetis has generated inputs for the mutant, we check whether augmentation with these inputs makes the mutant killed.
+First we run the evaluation step analogous to the one in DeepCrime with the initial test set, i.e. without adding the
+generated inputs. Then, we augment the test set with generated inputs and run the evaluation again. To run the evaluation process,
+please execute the following commands (please note that processing the inputs and evaluating the predictions will take some time):
+
+```
+cd evaluation
+python evaluate_metis.py
+cd ..
+```
+
+You will see two messages printed that would answer whether the mutant was killed by the original test set
+andt by the augmented test set. The example:
+```
+Mutant killed by the original test set?: False
+
+Mutant killed by the augmented test set?: True
+```
+
+
+## Step3: Replicate the results in the paper ##
+
+At this step we provide scripts to extract the data reported in the paper from our overall experimental data.
+All the experimental data is available in the subfolder named `experiments`. We have excluded the `.npy` files
+of the generated images due to the size restrictions.
+
+Run the following command to generate the UnityEyes data from Table 3 in the paper.
+
+```
+cd experiment
+python replicate_table3.py
+cd..
+```
+
+The script outputs the latex code for Table 3. This information is also stored in the file
+`summary.csv`. In addition, it generates the file `raw_data.csv` that provides information about each of 10 runs for each mutant.
+
+
+Run the following command to generate the UnityEyes data from Table 4 in the paper.
+
+```
+cd experiment
+python3 replicate_table4.py
+cd ..
+```
