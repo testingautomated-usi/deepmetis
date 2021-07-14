@@ -1,1 +1,0 @@
-# DeepMetis: MNIST
