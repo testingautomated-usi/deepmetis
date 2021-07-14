@@ -28,7 +28,7 @@ Use the following commands to start a run of DeepMetis-MNIST:
 
 ```
 cd DeepMetis-MNIST
-python3 main_launcher.py
+python3 main_launcher_examplerun.py
 ```
 
 This command will perform a single run of DeepMetis for the mutant obtained by applying 
@@ -37,7 +37,7 @@ indicated by using parameter `-run_num`. DeepMetis runs in `1vs5` mode by defaul
 `-mutant_num`. For example, the following command will perform 3 runs of DeepMetis in `1vs10` mode.
 
 ```
-python3 main_launcher.py -run_num=3 -mutant_num=10
+python3 main_launcher_examplerun.py -run_num=3 -mutant_num=10
 ```
 
 > NOTE: `properties.py` contains the tool's configuration, i.e., you should edit this file to change its configuration. For example, if you want to run <i>DeepMetis-MNIST</i> for a shorter number of iteration than the experiments in the paper, you need to set the `NGEN` variable in `properties.py` to a value lower than `1000`
