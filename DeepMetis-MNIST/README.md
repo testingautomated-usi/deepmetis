@@ -111,7 +111,7 @@ The script outputs the latex code for Table 4.
 To run DeepMetis for any mutant we first need mutations generated for MNIST by the DeepCrime tool. 
 These mutations can be downloaded from the artifacts provided by the authors of DeepCrime paper at the following links:
 
-https://zenodo.org/record/4737748
+https://zenodo.org/record/4737748  
 https://zenodo.org/record/4737754
 
 The artifacts contain `h5` files that names of which correspond to one of the 20 instances of a mutation operator run with a specific parameter. 
