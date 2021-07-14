@@ -34,8 +34,8 @@ RESEED_STRATEGY = 'random'
 
 GENERATE_ONE_ONLY = False
 
-MODELS='original_models'
-MUT_MODELS='mutant_models'
+MODELS='original_model'
+MUT_MODELS='mutant_model'
 
 RESULTS_PATH = 'results'
 DATASET = 'original_dataset/metis_dataset.h5'
