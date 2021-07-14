@@ -40,7 +40,7 @@ RESULTS_PATH = 'results'
 DATASET = 'population_9'
 
 
-SIKULIX_API_PATH = "Sikuli-jars//sikulixapi-2.0.5.jar"
+SIKULIX_API_PATH = "Sikuli-jars//sikulixapi-2.0.4.jar"
 
 SIKULIX_REST = "http://localhost:50001/"
 
