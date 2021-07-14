@@ -134,16 +134,6 @@ Moreover, DeepMetis will create a folder `results` which contains:
 * the final report (`report_final.json`);
 * the configuration's description (`config.json`).
 
-## Troubleshooting ##
-
-### ImportError: Could not find the DLL(s) msvcp140.dll ### 
-This issue can be resolved by dowloading and installing [vc_redist.exe](https://support.microsoft.com/en-us/topic/the-latest-supported-visual-c-downloads-2647da03-1eea-4433-9aff-95f26a218cc0)
-
-### python command is not recognised ###
-If you have python installed by some other way, for example from executable installer, to run the scripts you may need to use 'py' command instead of 'python':
-```
-py main.py
-```
 
 ### Evaluate the augmented test set with DeepCrime
 
@@ -181,14 +171,25 @@ python replicate_table3.py
 cd..
 ```
 
-The script outputs the latex code for Table 3. This information is also stored in the file
-`summary.csv`. In addition, it generates the file `raw_data.csv` that provides information about each of 10 runs for each mutant.
+The script produces and saves the data for UnityEyes section of Table 3 to the file
+named `summary.csv`. In addition, it generates the file `raw_data.csv` that provides information about each of 10 runs for each mutant.
 
 
-Run the following command to generate the UnityEyes data from Table 4 in the paper.
+Run the following command to generate the UnityEyes data from Table 4 in the paper. The produced the data for UnityEyes section of Table 4 is stored in the file named `leave_one_out.csv`.
 
 ```
 cd experiment
 python3 replicate_table4.py
 cd ..
+```
+
+## Troubleshooting ##
+
+### ImportError: Could not find the DLL(s) msvcp140.dll ### 
+This issue can be resolved by dowloading and installing [vc_redist.exe](https://support.microsoft.com/en-us/topic/the-latest-supported-visual-c-downloads-2647da03-1eea-4433-9aff-95f26a218cc0)
+
+### python command is not recognised ###
+If you have python installed by some other way, for example from executable installer, to run the scripts you may need to use 'py' command instead of 'python':
+```
+py main.py
 ```
