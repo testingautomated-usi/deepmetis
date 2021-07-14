@@ -21,12 +21,23 @@ Run it by typing in the terminal the following commands:
 docker run -it --rm p1ndsvin/ubuntu:metisbox
 ```
 
-## Step 2: Run DeepMetis ##
+## Step 2: Example Run ##
+
+### Run DeepMetis ###
 Use the following commands to start a run of DeepMetis-MNIST:
 
 ```
 cd DeepMetis-MNIST
-python3 main.py
+python3 main_launcher.py
+```
+
+This command will perform a single run of DeepMetis for the mutant obtained by applying 
+'Add Weights Regularisation' operator to the MNIST model ('l1_l2' regularisation will be added to the first layer). The number of runs can be 
+indicated by using parameter `-run_num`. DeepMetis runs in `1vs5` mode by default. The number of used mutant instances can be indicated using the parameter 
+`-mutant_num`. For example, the following command will perform 3 runs of DeepMetis in `1vs10` mode.
+
+```
+python3 main_launcher.py -run_num=3 -mutant_num=10
 ```
 
 > NOTE: `properties.py` contains the tool's configuration, i.e., you should edit this file to change its configuration. For example, if you want to run <i>DeepMetis-MNIST</i> for a shorter number of iteration than the experiments in the paper, you need to set the `NGEN` variable in `properties.py` to a value lower than `1000`
@@ -42,11 +53,55 @@ Process finished with exit code 0
 
 where X is the number of generated mutant-killing inputs.
 
-Moreover, DeepMetis will create a folder `results` which contains: 
+Moreover, DeepMetis will create a folder `results_mnist_add_weights_regularisation_mutated0_MP_l1_l2_0_1` which contains: 
 * the archive of solutions (`archive` folder); 
 * the final report (`report_final.json`);
 * the configuration's description (`config.json`).
 
-## Step 3: Evaluate the Mutation Score with DeepCrime ##
+### Evaluate the augmented test set with DeepCrime
+
+Once DeepMetis has generated inputs for the mutant, we check whether augmentation with these inputs 
+makes the mutant killed. First we run DeepCrime with the initial test set, i.e. without adding the
+generated inputs.
+
+```
+cd ../deepcrime
+python3 evaluate_metis.py -augment=no
+```
+
+At the end of the run you will see the output "Mutant killed: False".
+We then run DeepCrime augmenting it with DeepMetis generated inputs.
+ 
+```
+python3 evaluate_metis.py
+```
+
+In this case, at the end of the run you will see the output "Mutant killed: True".
+
+ 
+## Step3: Replicate the results in the paper ##
+
+At this step we provide scripts to extract the data reported in the paper from our 
+overall experimental data.
+All the experimental data is available in the folder `experiments`. We have excluded only the `.npy` files
+of the generated images due to their big size. 
+
+Run the following command to generate the MNIST data from Table 3 in the paper.
 
 
+```
+cd ../DeepMetis-MNIST/experiment/
+python3 replicate_table3.py
+```
+
+The script outputs the latex code for Table 3. This information is also stored in the file 
+`summary.csv`. In addition, it generates the file `raw_data.csv` that provides information about each of 10 runs for each mutant.
+
+
+Run the following command to generate the MNIST data from Table 4 in the paper.
+
+```
+python3 replicate_table4.py
+```
+
+The script outputs the latex code for Table 4. 
