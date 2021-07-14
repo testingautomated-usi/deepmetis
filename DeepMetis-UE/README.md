@@ -92,15 +92,16 @@ The folder Sikuli-jars contains a version of SikuliX downloaded from the [offici
 
 * Place the [updated sikulix_scripts folder](sikulix_scripts) folder directly to the "C:/" drive
 
-> **NOTE**: Please note that a computer should have a monitor connected for SikuliX to work.
-
 > **NOTE**: We already provided examples of these images in the [sikulix_scripts/unityeyes.sikuli folder](sikulix_scripts/unityeyes.sikuli/) but you most probably have to replace them to match your own screen resolution.
 
 * Run the Sikulix IDE in [Sikulix_jars/sikulixide-2.0.4.jar](Sikulix_jars/) (you can simply double click on it). It will automatically install the Jython standalone version.
 * Open [sikulix_scripts/unityeyes.sikuli/unityeyes.py](sikulix_scripts/unityeyes.sikuli/unityeyes.py) inside the Sikulix IDE.
 * Press the Run button to verify that the Sikulix script is able to find and interact with all the GUI widgets
 
-> **NOTE**: If Sikulix cannot find any widget, please capture it again (try to focus on the element and capture pixels that will always be present around the element).
+> **NOTE**: If Sikulix cannot find a widget, please capture it again (try to focus on the element and capture pixels that will always be present around the element).
+
+> **NOTE**: Please note that a computer should have a monitor connected for SikuliX to work. Please, also note that pop-up windows (such as the notification of a low battery) can disrupt the work of SikuliX.
+
 
 ## Step 2: Run DeepMetis
 
@@ -138,3 +139,9 @@ Moreover, DeepMetis will create a folder `results` which contains:
 
 ### ImportError: Could not find the DLL(s) msvcp140.dll ### 
 This issue can be resolved by dowloading and installing [vc_redist.exe](https://support.microsoft.com/en-us/topic/the-latest-supported-visual-c-downloads-2647da03-1eea-4433-9aff-95f26a218cc0)
+
+### python command is not recognised ###
+If you have python installed by some other way, for example from executable installer, to run the scripts you may need to use 'py' command instead of 'python':
+```
+py main.py
+```
