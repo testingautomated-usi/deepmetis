@@ -106,7 +106,7 @@ python3 replicate_table4.py
 
 The script outputs the latex code for Table 4. 
 
-## Step 4: Run DeepMetis for any mutant ##
+## Reuse DeepMetis: Run DeepMetis for any mutant ##
 
 To run DeepMetis for any mutant we first need mutations generated for MNIST by the DeepCrime tool. 
 These mutations can be downloaded from the artifacts provided by the authors of DeepCrime paper at the following links:
