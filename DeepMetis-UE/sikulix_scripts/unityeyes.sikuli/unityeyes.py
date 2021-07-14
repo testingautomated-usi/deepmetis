@@ -1,7 +1,7 @@
 # Getting the angles from the file
 from os.path import join
 
-BASE = "C:"
+BASE = "C://"
 
 SIKULIX_SCRIPT_FOLDER = "sikulix_scripts"
 
