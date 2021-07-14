@@ -6,9 +6,8 @@ This repository contains the source code and the data of the paper "DeepMetis: A
 ## Repository Structure ##
 The package is structured as follows:
 
-* [__DeepMetis-MNIST__](./DeepMetis-MNIST) contains the DeepMetis tool adapted to the handwritten digit classification case study and the instructions on how to use it;
-* [__DeepMetis-UE__](./DeepMetis-UE) contains the DeepMetis tool adapted to the eye gaze prediction case study and the instructions on how to use it;
-* [__experiments__](./experiments) contains the raw experimental data and the scripts to obtain the results reported in the paper;
+* [__DeepMetis-MNIST__](./DeepMetis-MNIST) contains the DeepMetis tool adapted to the handwritten digit classification case study and the instructions on how to use it. It also contains the raw experimental data and the scripts to obtain the results reported in the paper for the MNIST case study;
+* [__DeepMetis-UE__](./DeepMetis-UE) contains the DeepMetis tool adapted to the eye gaze prediction case study and the instructions on how to use it. It also contains the raw experimental data and the scripts to obtain the results reported in the paper for the UnityEyes case study;
 * [__installation guide__](./INSTALL.md) contains a quick installation guide of the tool.
 * [__preprint__](./deepmetis_paper.pdf) is the preprint version of our paper describing DeepMetis.
 

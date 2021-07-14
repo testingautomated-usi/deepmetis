@@ -79,7 +79,7 @@ python3 evaluate_metis.py
 In this case, at the end of the run you will see the output "Mutant killed: True".
 
  
-## Step3: Replicate the results in the paper ##
+## Step 3: Replicate the results in the paper ##
 
 At this step we provide scripts to extract the data reported in the paper from our 
 overall experimental data.
