@@ -246,6 +246,8 @@ The folder for each run contains more detailed information such as the files gen
 
   * File `summary.csv` contains UnityEyes data reported in Table 3 of the paper. Step 3 of the replication package indicates how this file can be generated automatically.
  
+  * File `leave_one_out.csv` contains UnityEyes data reported in Table 4 of the paper. Step 3 of the replication package indicates how this file can be generated automatically.
+ 
 <!--
 ### Configure a different number of runs and mutants ###
 
