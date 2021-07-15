@@ -49,7 +49,7 @@ python main.py
 
 > NOTE: The user must not interact with the PC during the run
 
-> NOTE: One run take up to 1 hour or more depending on the hardware specifications of the machine
+> NOTE: One run take up to 1 hour or more on a physical machine, depending on the hardware specifications of the machine (instead, on the virtual machine, it could more than 10 hours)
 
 When the run ends, on the console you should see a message similar to the following:
 
