@@ -1,7 +1,5 @@
 ## General Information ##
-This file contains the instructions on how to install DeepMetis-UnityEyes on a real machine equipped with Windows 10.
-
-This tool needs the UnityEyes and Sikuli to be installed on the machine where it is running. 
+This file contains the instructions on how to install DeepMetis-UnityEyes on a real machine equipped with Windows 10. 
 
 ### Step 1: Java Installation ###
 
