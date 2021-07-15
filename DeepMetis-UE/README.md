@@ -12,7 +12,7 @@ This step is to configure DeepMetis on a virtual machine. If you want to do it o
 
 To import the virtual image, you should install [Oracle VM VirtualBox 6.1.22](https://www.virtualbox.org/wiki/Downloads) for your platform and [VirtualBox 6.1.22 Oracle VM VirtualBox Extension Pack](https://download.virtualbox.org/virtualbox/6.1.22/Oracle_VM_VirtualBox_Extension_Pack-6.1.22.vbox-extpack).  
 
-Download our [ova](https://drive.google.com/file/d/1jNOITiCDJEZZbd-kgKbeRkzTyQa3Yv08/view?usp=sharing).  
+Download our [ova](https://drive.google.com/drive/folders/1N1q4df8k25IZWFWQyqfcDgHI3A7culUJ?usp=sharing).  
 
 Import and start the virtual image. Provide the password `ase2021` to the Windows 10 initial screen.
 
