@@ -30,7 +30,7 @@ cd C:\Users\ASE2021\deepmetis\DeepMetis-UE
 If you used a virtual environment, as in the virtual machine, activate the virtual environment.
 
 ```
-. .venv/bin/activate
+.\.venv\Scripts\activate
 ```
 
 Use the following command to start the SikuliX server:
@@ -43,7 +43,7 @@ Open another terminal instance and start a run of DeepMetis-UE:
 
 ```
 cd C:\Users\ASE2021\deepmetis\DeepMetis-UE
-. .venv/bin/activate
+.\.venv\Scripts\activate
 python main.py
 ```
 
