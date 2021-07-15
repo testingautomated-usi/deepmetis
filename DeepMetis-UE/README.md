@@ -4,6 +4,8 @@
 This folder contains the application of the DeepMetis approach to the eye gaze prediction problem.
 This tool is developed in Python on top of the DEAP evolutionary computation framework. It has been tested on a Windows machine equipped with a i9 processor, 32 GB of memory, and an Nvidia GPU GeForce RTX 2080 Ti with 11GB of dedicated memory.
 
+Due to the strict requirements and the dependency from screen resolution, we provide a VirtualBox virtual machine image. We selected VirtualBox since it should work on most operative systems, i.e. Mac OSX, Windows and Ubuntu. The virtual machine should be considered only for demo purposes. To carry on experiments, we suggest you to follow the [instructions on how to install DeepMetis-UnityEyes on a real machine](full_installation.md).
+
 ## Step 1: Configure the environment ##
 
 This tool needs the UnityEyes and Sikuli to be installed on the machine where it is running. 
