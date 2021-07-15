@@ -141,7 +141,7 @@ in this git repository as well as in the corresponding docker contains all the d
 test input generators. We excluded the images due to the overall size. However, we have uploaded all the data
 including also images to Zenodo at the following link:
 
-https://zenodo.org/record/{TO_BE_ADDED}
+https://zenodo.org/record/5105742
 
 The data related to MNIST case study is located in the MNIST.zip file of the Zenodo submission. Once this file is unzipped the folder MNIST
 will contain the following folders and files:
