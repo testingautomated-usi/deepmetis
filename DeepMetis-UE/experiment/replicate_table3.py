@@ -85,7 +85,7 @@ def get_overall_results_file(operator, file_dir):
             upper_bound = upper_bound * 2
 
         mut_score = round((upper_bound - killing) / (denom), 2)
-        print("MS", mut_score)
+
         mut_score[mut_score > 1.0] = 1.0
         # return np.mean(mut_score), input_mean, data['Input Num'], mut_score
         return data['Input Num'], mut_score, np.mean(mut_score), input_mean
@@ -93,6 +93,11 @@ def get_overall_results_file(operator, file_dir):
 
 def get_summary_file():
     csv_file = "summary.csv"
+
+    try:
+        os.remove(csv_file)
+    except OSError:
+        pass
 
     ind = 0
     for operator in operators:
@@ -119,6 +124,12 @@ def get_summary_file():
 
 def get_raw_data():
     raw_data_csv = "raw_data.csv"
+
+    try:
+        os.remove(raw_data_csv)
+    except OSError:
+        pass
+
     data = None
 
     for operator in operators:

@@ -25,7 +25,7 @@ if __name__ == '__main__':
         print(row)
         output.append(row)
 
-    with open(output_file, 'a') as f1:
+    with open(output_file, 'w') as f1:
         writer = csv.writer(f1, delimiter=',', lineterminator='\n', )
         writer.writerows(output)
 
