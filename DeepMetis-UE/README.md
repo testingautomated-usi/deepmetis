@@ -21,7 +21,7 @@ Import and start the virtual image. Provide the password `ase2021` to the Window
 
 ## Step 2: Run DeepMetis
 
-Open terminal and go in the directory where DeepHyperion is installed. In the virtual machine, the command is the following:
+Open terminal and go in the directory where DeepMetis is installed. In the virtual machine, the command is the following:
 
 ```
 cd C:\Users\ASE2021\deepmetis\DeepMetis-UE
