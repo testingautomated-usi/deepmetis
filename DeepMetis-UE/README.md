@@ -39,7 +39,7 @@ Use the following command to start the SikuliX server:
 python test.py
 ```
 
-Open another terminal instance, and start a run of DeepMetis-UE
+Open another terminal instance and start a run of DeepMetis-UE:
 
 ```
 cd C:\Users\ASE2021\deepmetis\DeepMetis-UE
@@ -49,9 +49,9 @@ python main.py
 
 > NOTE: The user must not interact with the PC during the run
 
-> NOTE: One run take up to 1 hour or more depending to the hardware specifications of the machine
+> NOTE: One run take up to 1 hour or more depending on the hardware specifications of the machine
 
-When the run ends, on the console you should see a message like the following:
+When the run ends, on the console you should see a message similar to the following:
 
 ```
 Final solution N is: X
