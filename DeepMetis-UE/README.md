@@ -6,105 +6,30 @@ This tool is developed in Python on top of the DEAP evolutionary computation fra
 
 Due to the strict requirements and the dependency from screen resolution, we provide a VirtualBox virtual machine image. We selected VirtualBox since it should work on most operative systems, i.e. Mac OSX, Windows and Ubuntu. The virtual machine should be considered only for demo purposes. To carry on experiments, we suggest you to follow the [instructions on how to install DeepMetis-UnityEyes on a real machine](full_installation.md).
 
-## Step 1: Configure the environment ##
+## Step 1: Configure the Environment ##
 
-This tool needs the UnityEyes and Sikuli to be installed on the machine where it is running. 
+This step is to configure DeepMetis on a virtual machine. If you want to do it on a real machine use the [following instructions](full_installation.md).
 
-### Step 1.1: Java Installation ###
+To import the virtual image, you should install [Oracle VM VirtualBox 6.1.22](https://www.virtualbox.org/wiki/Downloads) for your platform and [VirtualBox 6.1.22 Oracle VM VirtualBox Extension Pack](https://download.virtualbox.org/virtualbox/6.1.22/Oracle_VM_VirtualBox_Extension_Pack-6.1.22.vbox-extpack).  
 
-Download and install [Java SE 11](https://www.oracle.com/it/java/technologies/javase-jdk11-downloads.html). Official instructions [here](https://docs.oracle.com/en/java/javase/11/install/installation-jdk-microsoft-windows-platforms.html).
+Download our [ova](https://drive.google.com/file/d/1DqB6OHtwg9c0nf7zOoPgUjylWm_piNqS/view?usp=sharing).  
 
-### Step 1.2: Python Installation ###
-
-Install [_Python 3.7.9_](https://www.python.org/ftp/python/3.7.9/python-3.7.9-amd64.exe)
-
-Check that you are using the correct version of python:
-``` 
-py.exe -V
-```
-This command should produce as output the following string: `Python 3.7.9`
-
-To easily install the dependencies with pip, we suggest to create a dedicated virtual environment. For example, you can use `venv` and create a virtual environment called `.venv` inside the current folder (`DeepMetis-UE`):
-
-```
-python -m venv .venv
-```
-
-At this point, you need to activate the virtual environment:
-
-``` 
-.\.venv\Scripts\activate
-```
-
-
-At this point, upgrade `pip`:
-
-```
-py.exe -m pip install --upgrade pip
-
-```
-
-Update setuptools:
-```
-pip install setuptools --upgrade
-
-```
-
-Finally, install the other dependencies:
-```
-pip install -r requirements.txt
-```
-
-
-### Step 1.3: UnityEyes Installation and Configuration ###
-
-* Download a free Windows version of UnityEyes from the [official website](https://www.cl.cam.ac.uk/research/rainbow/projects/unityeyes/data/UnityEyes_Windows.zip).  
-* Edit the UNITYEYES_PATH in [properties.py](properties.py) by inserting the path to your UnityEyes folder. 
-* Pin the UnityEyes application to the taskbar: [instructions here](https://support.microsoft.com/en-us/windows/pin-apps-and-folders-to-the-desktop-or-taskbar-f3c749fb-e298-4cf1-adda-7fd635df6bb0)
-
-### Step 1.4: SikuliX Installation and Configuration ###
-
-The folder Sikuli-jars contains a version of SikuliX downloaded from the [official website](http://sikulix.com). We use it to allow the interaction of DeepMetis with UnityEyes via GUI. SikuliX works based on scanning the screen for particular elements to interact with, for example, an app icon to click on. Therefore, for each system the user should provide screenshots of GUI widgets to interact with. As screen resolutions and colours might differ from one computer to another, the screenshots we provide with our SikuliX scripts might not work on other computers. In the following, we will provide instructions on how to re-capture these images. To this aim, we provide the whole window along with the specific widget to crop, i.e. the one highlighted with a pink frame.
-
-* In the taskbar, take a screenshot of the highlighted component (i.e., UnityEyes icon) and save it as eye.png
-
-![eye](../images/eye.PNG)
-
-* Start UnityEyes and from the starting window take a screenshot of the highlighted component (i.e., play button) and save it as play.png
-
-![play](../images/play.PNG)
-
-* Press the play button and from the main window take a screenshot of the highlighted component (i.e., first edit text widget) and save it as first.png
-
-![first](../images/first.PNG)
-
-* From the UnityEyes' main window take a screenshot of the highlighted component (i.e., second edit text widget) and save it as second.png
-
-![second](../images/second.PNG)
-
-* From the UnityEyes' main window take a screenshot of the highlighted component (i.e., start button) and save it as start.png
-
-![start](../images/start.PNG)
-
-* From the UnityEyes' main window take a screenshot of the highlighted component (i.e., close window button) and save it as x.png
-
-![X](../images/X.PNG)
-
-* Save all the captured images in the [sikulix_scripts/unityeyes.sikuli folder](sikulix_scripts/unityeyes.sikuli/)
-
-
-> **NOTE**: We already provided examples of these images in the [sikulix_scripts/unityeyes.sikuli folder](sikulix_scripts/unityeyes.sikuli/) but you most probably have to replace them to match your own screen resolution.
-
-* Run the Sikulix IDE in [Sikulix_jars/sikulixide-2.0.4.jar](Sikulix_jars/) (you can simply double click on it). It will automatically install the Jython standalone version.
-* Open [sikulix_scripts/unityeyes.sikuli/unityeyes.py](sikulix_scripts/unityeyes.sikuli/unityeyes.py) inside the Sikulix IDE.
-* Press the Run button to verify that the Sikulix script is able to find and interact with all the GUI widgets
-
-> **NOTE**: If Sikulix cannot find a widget, please capture it again (try to focus on the element and capture pixels that will always be present around the element).
-
-> **NOTE**: Please note that a computer should have a monitor connected for SikuliX to work. Please, also note that pop-up windows (such as the notification of a low battery) can disrupt the work of SikuliX.
+Import and start the virtual image. Provide the password `ase2021` to the Windows 10 initial screen.
 
 
 ## Step 2: Run DeepMetis
+
+Open terminal and go in the directory where DeepHyperion is installed. In the virtual machine, the command is the following:
+
+```
+cd C:\Users\ASE2021\deepmetis\DeepMetis-UE
+```
+
+If you used a virtual environment, as in the virtual machine, activate the virtual environment.
+
+```
+. .venv/bin/activate
+```
 
 Use the following command to start the SikuliX server:
 
@@ -112,9 +37,11 @@ Use the following command to start the SikuliX server:
 python test.py
 ```
 
-Use the following command to start a run of DeepMetis-UE:
+Open another terminal instance, and start a run of DeepMetis-UE
 
 ```
+cd C:\Users\ASE2021\deepmetis\DeepMetis-UE
+. .venv/bin/activate
 python main.py
 ```
 
