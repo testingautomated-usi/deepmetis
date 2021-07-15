@@ -1,5 +1,5 @@
 from os.path import exists
-from properties import RESULTS_PATH, INTERPRETER
+from properties import RESULTS_PATH, INTERPRETER, NUM_RUNS
 import shutil
 import time
 from os import makedirs
@@ -8,7 +8,7 @@ import re
 
 src = RESULTS_PATH
 
-for i in range(9,10):
+for i in range(NUM_RUNS):
     with open("properties.py", "r") as file_obj:
         #file_obj.write(pop_string)
         data = file_obj.read()

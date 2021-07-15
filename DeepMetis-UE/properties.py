@@ -39,6 +39,7 @@ RESULTS_PATH = 'results'
 
 DATASET = 'population_9'
 
+NUM_RUNS = 10
 
 SIKULIX_API_PATH = "Sikuli-jars//sikulixapi-2.0.4.jar"
 
