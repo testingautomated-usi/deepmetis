@@ -248,15 +248,16 @@ The folder for each run contains more detailed information such as the files gen
  
   * File `leave_one_out.csv` contains UnityEyes data reported in Table 4 of the paper. Step 3 of the replication package indicates how this file can be generated automatically.
  
-<!--
+
 ### Configure a different number of runs and mutants ###
 
-The numbers of runs and mutants can be set in the launcher `main_launcher_examplerun.py`. The number of runs can be indicated by using parameter `-run_num`. DeepMetis runs in `1vs5` mode by default. The number of used mutant instances can be indicated using the parameter `-mutant_num`. For example, the following command will perform 3 runs of DeepMetis in `1vs10` mode:
+To perform more runs of DeepMetis, i.e. use more than 1 initial population, please change the `NUM_RUNS` parameter in the `properties.py` file. It can take values from 1 to 10. The number of mutants used to perform the runs (the setting of the tool, for example `1vs5`) is defined by the number of mutated models that were put to the `mutant_models` folder. After setting the desired number of runs, to run DeepMetis please execute the following command:
 
 ```
-python3 main_launcher_examplerun.py -run_num=3 -mutant_num=10
+python main_launcher.py
+
 ```
--->
+
 
 ## Troubleshooting ##
 
