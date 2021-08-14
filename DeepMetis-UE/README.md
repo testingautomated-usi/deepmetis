@@ -27,6 +27,8 @@ Provide the password `ase2021` to the Windows 10 initial screen.
 
 ## Step 2: Run DeepMetis
 
+> NOTE: Before starting a run, ensure that you deleted or removed the folder named `results` in the DeepMetis-MNIST main folder
+
 Open terminal and go in the directory where DeepMetis is installed. In the virtual machine, the command is the following:
 
 ```
