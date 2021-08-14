@@ -71,7 +71,7 @@ git clone https://github.com/testingautomated-usi/deepmetis.git
 ### Installing Python Binding to the Potrace library ###
 Instructions provided by https://github.com/flupke/pypotrace.
 
-Install system dependencies in your environment (it is not needed to install them in the DeepJanus-MNIST folder):
+Install system dependencies in your environment (it is not needed to install them in the DeepMetis-MNIST folder):
 
 ``` 
 apt-get install build-essential python-dev libagg-dev libpotrace-dev pkg-config 
