@@ -9,6 +9,8 @@ Follow the steps below to set up DeepMetis and validate its general functionalit
 
 ## Step 1: Configure the environment  ##
 
+This step is to configure DeepMetis on our docker container. If you want to do it on a generic Ubuntu machine use the [following instructions](full_installation.md).
+
 Pull our pre-configured Docker image for DeepMetis-MNIST:
 
 ``` 
