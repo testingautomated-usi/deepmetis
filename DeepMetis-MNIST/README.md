@@ -11,6 +11,8 @@ Follow the steps below to set up DeepMetis and validate its general functionalit
 
 This step is to configure DeepMetis on our docker container. If you want to do it on a generic Ubuntu machine use the [following instructions](full_installation.md).
 
+> NOTE: the size of the Docker image is ~15 GBs
+
 Pull our pre-configured Docker image for DeepMetis-MNIST:
 
 ``` 
