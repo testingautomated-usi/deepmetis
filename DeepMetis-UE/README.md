@@ -18,7 +18,9 @@ To import the virtual image, you should install [Oracle VM VirtualBox 6.1.22](ht
 
 Download our [ova](https://drive.google.com/drive/folders/1N1q4df8k25IZWFWQyqfcDgHI3A7culUJ?usp=sharing).  
 
-Import and start the virtual image. Provide the password `ase2021` to the Windows 10 initial screen.
+Import and start the virtual image. See the official instructions [here](https://docs.oracle.com/cd/E26217_01/E26796/html/qs-import-vm.html).   
+
+Provide the password `ase2021` to the Windows 10 initial screen.
 
 > NOTE: Please close other resource-demanding applications before running the virtual image
 
