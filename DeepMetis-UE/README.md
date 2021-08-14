@@ -10,6 +10,8 @@ Due to the strict requirements and the dependency from screen resolution, we pro
 
 This step is to configure DeepMetis on a virtual machine. If you want to do it on a real machine use the [following instructions](full_installation.md).
 
+> NOTE: the size of the VM image is ~15 GBs
+
 To import the virtual image, you should install [Oracle VM VirtualBox 6.1.22](https://www.virtualbox.org/wiki/Downloads) for your platform and [VirtualBox 6.1.22 Oracle VM VirtualBox Extension Pack](https://download.virtualbox.org/virtualbox/6.1.22/Oracle_VM_VirtualBox_Extension_Pack-6.1.22.vbox-extpack).  
 
 Download our [ova](https://drive.google.com/drive/folders/1N1q4df8k25IZWFWQyqfcDgHI3A7culUJ?usp=sharing).  
