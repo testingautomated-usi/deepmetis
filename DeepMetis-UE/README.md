@@ -96,7 +96,7 @@ Mutant killed by the original test set?: False
 
 Mutant killed by the augmented test set?: True
 ```
-
+> NOTE: with the VM, the evaluation will take > 5 minutes
 
 ## Step 3: Replicate the results in the paper ##
 
