@@ -120,7 +120,7 @@ Run the following command to generate the UnityEyes data from Table 4 in the pap
 
 ```
 cd experiment
-python3 replicate_table4.py
+python replicate_table4.py
 cd ..
 ```
 
