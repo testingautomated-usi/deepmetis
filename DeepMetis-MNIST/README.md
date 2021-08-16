@@ -145,7 +145,8 @@ available at the following link:
 
 https://zenodo.org/record/4772465
 
-Once  the `h5` files of the mutant are obtained, the process is the  same, i.e. we need (as per above instructions) to copy them into corresponding folders and run 
+The section "Running DeepCrime with a new subject system" provides all the required information for this task.
+Once  the `h5` files of the mutant are obtained, the process of running DeepMetis is the  same, i.e. we need (as per above instructions) to copy `h5` into corresponding folders and run 
 `main_launcher.py`.
 ### Explore all the data generated as part of the paper ###
 
