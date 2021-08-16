@@ -113,7 +113,7 @@ The script outputs the latex code for Table 4.
 
 ### Run DeepMetis for any mutant ###
 
-To run DeepMetis for any mutant, we first need mutations generated for MNIST by the DeepCrime tool. 
+To run DeepMetis for any mutant used in our experiments, we first need mutations generated for MNIST by the DeepCrime tool. 
 These mutations can be downloaded from the artifacts provided by the authors of DeepCrime paper at the following links:
 
 https://zenodo.org/record/4737748  
@@ -138,6 +138,15 @@ Once the desired number of instances have been copied, run the following command
 ```
 python3 main_launcher.py
 ```
+
+To apply DeepMetis to the mutants that were not used in our experiments, the user first needs
+to generate them. The instructions on how to generate mutants using DeepCrime are provided in the tool's own replication package
+available at the following link:
+
+https://zenodo.org/record/4772465
+
+Once  the `h5` files of the mutant are obtained, the process is the  same, i.e. we need (as per above instructions) to copy them into corresponding folders and run 
+`main_launcher.py`.
 ### Explore all the data generated as part of the paper ###
 
 We provide all the data collected during our experiments. The data in the folder `DeepMetis-MNIST/experiment`
