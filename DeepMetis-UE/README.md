@@ -154,6 +154,15 @@ Once the desired number of instances has been copied, run the following command:
 python main.py
 ```
 
+To apply DeepMetis to the mutants that were not used in our or DeepCrime's experiments, the user first needs
+to generate them. The instructions on how to generate mutants using DeepCrime are provided in the tool's own replication package
+available at the following link:
+
+https://zenodo.org/record/4772465
+
+Once  the `h5` files of the mutant are obtained, the process of running DeepMetis is the  same, i.e. we need (as per above instructions) to copy `h5` into corresponding folders and run 
+`main.py`.
+
 ### Explore all the data generated as part of the paper ###
 
 We provide all the data collected during our experiments. The data in the folder `DeepMetis-UE/experiment`
