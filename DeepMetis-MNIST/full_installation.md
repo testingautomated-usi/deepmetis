@@ -68,7 +68,7 @@ apt install -y python3-venv
 Create the python virtual environment:
 
 ```
-cd /DeepHyperion-MNIST
+cd /DeepMetis-MNIST
 python3 -m venv .venv
 ```
 
@@ -136,7 +136,7 @@ And
 
 This tool has other dependencies such as tensorflow and deap.
 
-To easily install the dependencies with pip, we suggest to go in the folder where you extracted DeepMetis-MNIST and run the command:
+To easily install the dependencies with pip, we suggest to go in the folder where you extracted DeepMetis-MNIST and then run the command:
 
 ```pip install -r requirements.txt```
 
