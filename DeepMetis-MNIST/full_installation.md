@@ -7,7 +7,10 @@ This tool is developed in Python on top of the DEAP evolutionary computation fra
 ## Dependencies ##
 
 ### Configure Ubuntu ###
-If you do not have a fresh Ubuntu machine, we strongly suggest to pull an Ubuntu Docker image, run and configure it by typing in the terminal:
+
+DeepMetis-MNIST works on Ubuntu 18.04 (bionic) machines. We suggest to use a fresh Ubuntu machine, since other packages installed on it may interfere with the installation.
+
+However, if you do not have a fresh Ubuntu machine, you can use a virtual machine or docker container. We strongly suggest to pull an Ubuntu Docker image, run and configure it by typing in the terminal:
 
 ``` 
 docker pull ubuntu:bionic
