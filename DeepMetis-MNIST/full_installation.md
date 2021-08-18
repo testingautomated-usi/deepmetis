@@ -82,7 +82,7 @@ apt install -y python3-venv
 Create the python virtual environment:
 
 ```
-cd /DeepMetis-MNIST
+cd deepmetis/DeepMetis-MNIST
 python3 -m venv .venv
 ```
 
