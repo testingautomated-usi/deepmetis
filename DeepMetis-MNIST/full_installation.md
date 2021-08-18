@@ -85,7 +85,7 @@ Use the following command to install git
 apt install -y git
 ```
 
-To check the correct installation of git, insert the command git in the terminal. If git is correctly installed, the usage information will be shown.
+To check the correct installation of git, insert the command `git` in the terminal. If git is correctly installed, the usage information will be shown.
 
 ### Cloning this repo ###
 Use the following command to clone the repository
