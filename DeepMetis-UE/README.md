@@ -2,7 +2,7 @@
 
 ## General Information ##
 This folder contains the application of the DeepMetis approach to the eye gaze prediction problem.
-This tool is developed in Python on top of the DEAP evolutionary computation framework. It has been tested on a Windows machine equipped with a i9 processor, 32 GB of memory, and an Nvidia GPU GeForce RTX 2080 Ti with 11GB of dedicated memory.
+This tool is developed in Python on top of the DEAP evolutionary computation framework. It has been tested on a Windows 10 machine equipped with a i9 processor, 32 GB of memory, and an Nvidia GPU GeForce RTX 2080 Ti with 11GB of dedicated memory.
 
 Due to the strict requirements and the dependency from screen resolution, we provide a VirtualBox virtual machine image. We selected VirtualBox since it should work on most operative systems, i.e. Mac OSX, Windows and Ubuntu. The virtual machine should be considered only for demo purposes. To carry on experiments, we suggest you to follow the [instructions on how to install DeepMetis-UnityEyes on a real machine](full_installation.md).
 
@@ -12,11 +12,11 @@ This step is to configure DeepMetis on a virtual machine. If you want to do it o
 
 > NOTE: the size of the VM image is ~15 GBs
 
-*Important Note:* We tested our VM image on three different Windows 10 machines and on a MacBook Pro with macOS 10.15 (Catalina)
+*Important Note:* We tested our VM image on three different Windows 10 machines and on a MacBook Pro with macOS 10.15 (Catalina). The VM is equipped with Windows 10 OS and we cannot guarantee DeepMetis-UE works with other Windows versions.    
 
 To import the virtual image, you should install [Oracle VM VirtualBox 6.1.22](https://www.virtualbox.org/wiki/Downloads) for your platform and [VirtualBox 6.1.22 Oracle VM VirtualBox Extension Pack](https://download.virtualbox.org/virtualbox/6.1.22/Oracle_VM_VirtualBox_Extension_Pack-6.1.22.vbox-extpack).  
 
-Download our [ova](https://drive.google.com/drive/folders/1N1q4df8k25IZWFWQyqfcDgHI3A7culUJ?usp=sharing).  
+Download our [ova](https://usi365-my.sharepoint.com/:u:/g/personal/ricciv_usi_ch/ETSI_NV3zkdEqXTYl88hk5EBZFNw7gBOGMRnTaAjjS-OmA?e=yrMPCW).  
 
 Import and start the virtual image. See the official instructions [here](https://docs.oracle.com/cd/E26217_01/E26796/html/qs-import-vm.html).   
 
@@ -57,7 +57,7 @@ python main.py
 
 > NOTE: The user must not interact with the PC during the run
 
-> NOTE: One run take up to 1 hour or more on a physical machine, depending on the hardware specifications of the machine (instead, on the virtual machine, it could more than 10 hours)
+> NOTE: One run take up to 1 hour or more on a physical machine, depending on the hardware specifications of the machine (instead, on the virtual machine, it could more than 10 hours). Therefore in the VM, we configured a short run of 3 iterations that should take less time. To perform a longer run, the user should modify the value of the variable `NGEN` in `properties.py` to the desired number of iterations. As an example, to perform the same number of iteration of the experimental evaluation, NGEN should be set to 100
 
 When the run ends, on the console you should see a message similar to the following:
 
@@ -80,8 +80,7 @@ Moreover, DeepMetis will create a folder `results` which contains:
 
 Once DeepMetis has generated inputs for the mutant, we check whether augmentation with these inputs makes the mutant killed.
 First we run the evaluation step analogous to the one in DeepCrime with the initial test set, i.e. without adding the
-generated inputs. Then, we augment the test set with generated inputs and run the evaluation again. To run the evaluation process,
-please execute the following commands (please note that processing the inputs and evaluating the predictions will take some time):
+generated inputs. Then, we augment the test set with generated inputs and run the evaluation again. To run the evaluation process, please execute the following commands (please note that processing the inputs and evaluating the predictions will take some time):
 
 ```
 cd evaluation
@@ -97,6 +96,8 @@ Mutant killed by the original test set?: False
 Mutant killed by the augmented test set?: True
 ```
 > NOTE: with the VM, the evaluation will take > 5 minutes
+
+> NOTE: Since a DeepMetis run can be long, we provide an example results folder in the VM named `results_old` placed in the DeepMetis-UE main folder. To use this instead of a user-generated results folder, the user should rename it from `results_old` to `results` and then run `evaluate_metis.py`.
 
 ## Step 3: Replicate the results in the paper ##
 
@@ -218,3 +219,15 @@ If you have python installed by some other way, for example from executable inst
 ```
 py main.py
 ```
+
+### VirtualBox fails to import the ova ###
+Ensure to have downloaded also the [VirtualBox 6.1.22 Oracle VM VirtualBox Extension Pack](https://download.virtualbox.org/virtualbox/6.1.22/Oracle_VM_VirtualBox_Extension_Pack-6.1.22.vbox-extpack).
+
+### DeepMetis runs up to the last iteration, but at the end of it shows an assertion error (the length of the solution list is not equal to that of the archive) ###
+Ensure to have deleted or renamed the `results` folder before starting a DeepMetis run.
+
+### SikuliX fails to correctly interact with the GUI ###
+* Run the Sikulix IDE in [Sikulix_jars/sikulixide-2.0.4.jar](Sikulix_jars/) (you can simply double click on it). It will automatically install the Jython standalone version.
+* Open [sikulix_scripts/unityeyes.sikuli/unityeyes.py](sikulix_scripts/unityeyes.sikuli/unityeyes.py) inside the Sikulix IDE.
+* Press the Run button to verify that the Sikulix script is able to find and interact with all the GUI widgets
+* Try to increase the wait times in the [sikulix_scripts/unityeyes.sikuli/unityeyes.py](sikulix_scripts/unityeyes.sikuli/unityeyes.py) script
