@@ -96,3 +96,5 @@ The folder Sikuli-jars contains a version of SikuliX downloaded from the [offici
 > **NOTE**: If Sikulix cannot find a widget, please capture it again (try to focus on the element and capture pixels that will always be present around the element).
 
 > **NOTE**: Please note that a computer should have a monitor connected for SikuliX to work. Please, also note that pop-up windows (such as the notification of a low battery) can disrupt the work of SikuliX.
+
+At this point, you can go to Step 2 of the [instructions](README.md). 
