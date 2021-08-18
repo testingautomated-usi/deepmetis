@@ -57,6 +57,20 @@ Once the installation is complete, verify the installation by checking the pip v
 python3 -m pip --version
 ```
 
+### Installing git ###
+Use the following command to install git
+``` 
+apt install -y git
+```
+
+To check the correct installation of git, insert the command `git` in the terminal. If git is correctly installed, the usage information will be shown.
+
+### Cloning this repo ###
+Use the following command to clone the repository
+``` 
+git clone https://github.com/testingautomated-usi/deepmetis.git
+```
+
 ### Creating a Python virtual environment ###
 
 Install the `venv` module in the docker container:
@@ -79,19 +93,6 @@ Activate the python virtual environment and updated `pip` again (venv comes with
 pip install --upgrade pip
 ```
 
-### Installing git ###
-Use the following command to install git
-``` 
-apt install -y git
-```
-
-To check the correct installation of git, insert the command `git` in the terminal. If git is correctly installed, the usage information will be shown.
-
-### Cloning this repo ###
-Use the following command to clone the repository
-``` 
-git clone https://github.com/testingautomated-usi/deepmetis.git
-```
 
 ### Installing Python Binding to the Potrace library ###
 Instructions provided by https://github.com/flupke/pypotrace.
