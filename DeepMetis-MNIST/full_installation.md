@@ -188,3 +188,5 @@ To fix the problem and install a specific version, use the following command:
 ```
 $ pip install 'modulename==moduleversion' --force-reinstall
 ```
+
+* If the command `pip install -r requirements.txt` fails to find the requirements.txt file, please ensure that you are calling it from inside the DeepMetis-MNIST folder.
