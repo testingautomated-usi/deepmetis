@@ -27,9 +27,9 @@ Provide the password `ase2021` to the Windows 10 initial screen.
 
 ## Step 2: Run DeepMetis
 
-> NOTE: Before starting a run of DeepMetis, ensure that you deleted or removed the folder named `results` in the DeepMetis-MNIST main folder, otherwise you can use the existing `results` to directly perform the [evaluation step.](#Evaluate-the-augmented-test-set-with-DeepCrime)
+> NOTE: Before starting a run of DeepMetis, ensure that you deleted or removed the folder named `results` in the DeepMetis-UE main folder, otherwise you can use the existing `results` to directly perform the [evaluation step.](#Evaluate-the-augmented-test-set-with-DeepCrime)
 
-Open terminal and go in the directory where DeepMetis is installed. In the virtual machine, the command is the following:
+Open a terminal window and move to the directory where DeepMetis-UE is installed. In the virtual machine, the command is the following:
 
 ```
 cd C:\Users\ASE2021\deepmetis\DeepMetis-UE
@@ -47,10 +47,15 @@ Use the following command to start the SikuliX server:
 python test.py
 ```
 
-Open another terminal instance and start a run of DeepMetis-UE:
+Open another terminal instance and move to the directory where DeepMetis-UE is installed. For the virtual machine, the command is the following:
 
 ```
 cd C:\Users\ASE2021\deepmetis\DeepMetis-UE
+```
+
+Start a run of DeepMetis-UE:
+
+```
 .\.venv\Scripts\activate
 python main.py
 ```
