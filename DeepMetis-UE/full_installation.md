@@ -52,7 +52,7 @@ pip install -r requirements.txt
 ### Step 3: UnityEyes Installation and Configuration ###
 
 * Download a free Windows version of UnityEyes from the [official website](https://www.cl.cam.ac.uk/research/rainbow/projects/unityeyes/data/UnityEyes_Windows.zip).  
-* Edit the UNITYEYES_PATH in [properties.py](properties.py) by inserting the path to your UnityEyes folder. 
+* Edit the UNITYEYES_PATH in [properties.py](properties.py) by inserting the path to your UnityEyes folder where the UnityEyes application is located. 
 * Pin the UnityEyes application to the taskbar: [instructions here](https://support.microsoft.com/en-us/windows/pin-apps-and-folders-to-the-desktop-or-taskbar-f3c749fb-e298-4cf1-adda-7fd635df6bb0)
 * Copy the [sikulix_scripts](sikulix_scripts) folder to Local Disk (C:)
 
