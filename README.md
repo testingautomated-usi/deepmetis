@@ -39,7 +39,3 @@ Here is an example BibTeX entry:
 	year= {2021}
 }
 ```
-
-## DOI
-
-[![DOI](https://zenodo.org/badge/384019839.svg)](https://zenodo.org/badge/latestdoi/384019839)
