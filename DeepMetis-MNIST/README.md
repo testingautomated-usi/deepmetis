@@ -36,6 +36,8 @@ cd DeepMetis-MNIST
 
 Use the following command to start a fast run of DeepMetis-MNIST:
 
+> NOTE: Before starting a run, ensure that you deleted or removed the folder named `results` in the DeepMetis-MNIST main folder
+
 ```
 python3 main_launcher_examplerun.py
 ```
